@@ -146,6 +146,10 @@ const BackBtnContainer = styled.div`
     color: rgb(132,151,143);
 `;
 
+interface ICoinProps {
+    isDark: boolean;
+}
+
 function Coin() {
   const { coinId } = useParams<RouteParams>();
   const { state } = useLocation<RouteState>();
